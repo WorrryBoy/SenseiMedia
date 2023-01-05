@@ -17,8 +17,11 @@ body {
     align-items: center;
     padding-top: 5px;
 }
-.nav, .feedback {
+.feedback {
     display: none;
+}
+.nav li {
+    display:none;
 }
 .nav li a {
     text-decoration: none;
