@@ -17,6 +17,9 @@ body {
     align-items: center;
     padding-top: 5px;
 }
+.nav, .feedback {
+    display: none;
+}
 .nav li a {
     text-decoration: none;
     font-size: 16px;
@@ -87,7 +90,7 @@ body {
     left: -120%;
     overflow-y: hidden;
     transition: 0.5s;
-    border-radius: 50%;
+    border-radius:50%;
     overflow: auto;
     border: 10px solid #ffd900;
 }
@@ -104,7 +107,7 @@ body {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
-    margin-left: 65px;
+    margin-left: 40%;
     position: relative;
 }
 .li-item {
@@ -124,7 +127,7 @@ body {
     text-align: center;
 }
 .active {
-    left: -30%;
+    left: -50%;
 }
 .overflow {
     overflow: hidden;
@@ -491,7 +494,7 @@ footer p {
     position: relative;
     width: 50px;
     height: 50px;
-    display: none;
+    display: block;
     border-radius: 50px;
     background: linear-gradient(115.11deg, #FFBC2A 16.38%, #FF4F39 95.45%);
 }
