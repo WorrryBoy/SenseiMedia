@@ -15,7 +15,7 @@
                 <div class="nav-block"> 
                     <li class="li-item1"> <a class="nav-item" href="#service">Услуги</a></li>
                     <li class="li-item"> <a class="nav-item" href="#">Главная</a></li>
-                    <li class="li-item"> <a class="nav-item" href="#">Наши работы</a></li>
+                    <li class="li-item"> <a class="nav-item" href="#works">Наши работы</a></li>
                     <li class="li-item"> <a class="nav-item" href="#">Контакты</a></li>
                     <li class="li-item"> <a class="nav-item" href="#consultation">Обратная связь</a></li>
                 </div>
@@ -31,7 +31,7 @@
                         <div class="nav">
                             <li> <a href="#">Главная</a></li>
                             <li> <a href="#service">Услуги</a></li>
-                            <li> <a href="#">Наши работы</a></li>
+                            <li> <a href="#works">Наши работы</a></li>
                             <li> <a href="#">Контакты</a></li>
                         </div>
                         <div class="feedback">
@@ -228,7 +228,7 @@
         </div>
         <div class="us-works">
             <div class="container">
-                <div class="title-works">
+                <div class="title-works" id="works">
                     НАШИ РАБОТЫ
                 </div>
                 <div class="us-work-cards">
@@ -354,6 +354,13 @@
             burger.classList.toggle('span2')
             burgerline.classList.toggle('active')
             body.classList.toggle('overflow')
+        })
+        let item = document.querySelector('.nav-block')
+        item.addEventListener('click', ()=> {
+            burgerline.classList.remove('active')
+            body.classList.remove('overflow')
+            burger.classList.remove('span1')
+            burger.classList.remove ('span2')
         })
     </script>
 </body>
