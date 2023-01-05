@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,17 @@
 </head>
 <body>
     <header>
+        <div class="line-burger-menu">
+            <div class="nav-burger">
+                <div class="nav-block"> 
+                    <li class="li-item1"> <a class="nav-item" href="#service">Услуги</a></li>
+                    <li class="li-item"> <a class="nav-item" href="#">Главная</a></li>
+                    <li class="li-item"> <a class="nav-item" href="#">Наши работы</a></li>
+                    <li class="li-item"> <a class="nav-item" href="#">Контакты</a></li>
+                    <li class="li-item"> <a class="nav-item" href="#consultation">Обратная связь</a></li>
+                </div>
+            </div>
+        </div>
         <div class="line2"> 
             <div class="header-line">
                 <div class="container"> 
@@ -41,7 +52,7 @@
                 <div class="header-screen-con"> 
                     <div class="left-header-screen">    
                         <div class="header-screen-title">
-                            УВЕЛИЧИВАЕМ <br> <span>продажи в интернете </span>
+                            УВЕЛИЧИВАЕМ <br> <span>продaжи в интернете </span>
                         </div>
                         <div class="header-screen-desc">
                             Создайте эталонный бизнес-процесс, по которому будут работать 
@@ -302,7 +313,7 @@
                     </div>
                     <div class="col-con">
                         <div class="col-info-2">
-                            <h3>ИНФОРМАЦИЯ</h3>
+                            <h3>Информация</h3>
                                 <li><a href="#">Главная</a></li>
                                 <li><a href="#">Услуги</a></li>
                                 <li><a href="#">Наши работы</a></li>
@@ -336,9 +347,13 @@
             btn.classList.toggle('enable')
         })
         let burger = document.querySelector('.menu-btn')
+        let burgerline = document.querySelector('.line-burger-menu')
+        let body = document.querySelector('body')
         burger.addEventListener('click', ()=> {
             burger.classList.toggle('span1')
             burger.classList.toggle('span2')
+            burgerline.classList.toggle('active')
+            body.classList.toggle('overflow')
         })
     </script>
 </body>
