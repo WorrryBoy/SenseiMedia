@@ -13,11 +13,11 @@
         <div class="line-burger-menu">
             <div class="nav-burger">
                 <div class="nav-block"> 
-                    <li class="li-item1"> <a class="nav-item" href="#service">Услуги</a></li>
-                    <li class="li-item"> <a class="nav-item" href="#">Главная</a></li>
-                    <li class="li-item"> <a class="nav-item" href="#works">Наши работы</a></li>
-                    <li class="li-item"> <a class="nav-item" href="#">Контакты</a></li>
-                    <li class="li-item"> <a class="nav-item" href="#consultation">Обратная связь</a></li>
+                    <li class="li-item1 one"> <a class="nav-item" href="#service">Услуги</a></li>
+                    <li class="li-item two"> <a class="nav-item" href="#">Главная</a></li>
+                    <li class="li-item three"> <a class="nav-item" href="#works">Наши работы</a></li>
+                    <li class="li-item four"> <a class="nav-item" href="#">Контакты</a></li>
+                    <li class="li-item five"> <a class="nav-item" href="#consultation">Обратная связь</a></li>
                 </div>
             </div>
         </div>
@@ -47,6 +47,7 @@
                 </div>
             </div>
         </div> 
+        <div class="yellow"> 
         <div class="header-screen">
             <div class="container">
                 <div class="header-screen-con"> 
@@ -98,6 +99,7 @@
         </div>
     </header>
     <main>
+<div class="yellow3">
         <div class="us-services">
             <div class="container">
                 <div class="services-title" id="service">
@@ -330,6 +332,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    </div>
+
     </main>
     <footer>
             <p>© 2023 Все права защищены</p>
@@ -349,11 +354,33 @@
         let burger = document.querySelector('.menu-btn')
         let burgerline = document.querySelector('.line-burger-menu')
         let body = document.querySelector('body')
+        let one = document.querySelector('.one')
+        let two = document.querySelector('.two')
+        let three = document.querySelector('.three')
+        let four = document.querySelector('.four')
+        let five = document.querySelector('.five')
+        let yellow = document.querySelector('.yellow')
+        let main = document.querySelector('main')
+        let header = document.querySelector('header')
+        let yellow3 = document.querySelector('.yellow3')
+        let screen = document.querySelector('.header-screen')
+        let footer = document.querySelector('footer')
         burger.addEventListener('click', ()=> {
             burger.classList.toggle('span1')
             burger.classList.toggle('span2')
             burgerline.classList.toggle('active')
             body.classList.toggle('overflow')
+            one.classList.toggle('animate')
+            two.classList.toggle('animate')
+            three.classList.toggle('animate')
+            four.classList.toggle('animate')
+            five.classList.toggle('animate')
+            yellow.classList.toggle('yellow2')
+            main.classList.toggle('bg')
+            header.classList.toggle('bg')
+            yellow3.classList.toggle('yellow2')
+            footer.classList.toggle('dn')
+
         })
         let item = document.querySelector('.nav-block')
         item.addEventListener('click', ()=> {
@@ -361,6 +388,18 @@
             body.classList.remove('overflow')
             burger.classList.remove('span1')
             burger.classList.remove ('span2')
+            yellow3.classList.remove('yellow2')
+            yellow.classList.remove('yellow2')
+            main.classList.remove('bg')
+            header.classList.remove('bg')
+            footer.classList.remove('dn')
+        })
+        burgerline.addEventListener('click', ()=> {
+            one.classList.remove('animate')
+            two.classList.remove('animate')
+            three.classList.remove('animate')
+            four.classList.remove('animate')
+            five.classList.remove('animate')
         })
     </script>
 </body>
