@@ -13,10 +13,10 @@
         <div class="line-burger-menu">
             <div class="nav-burger">
                 <div class="nav-block"> 
-                    <li class="li-item1 one"> <a class="nav-item" href="#service">Услуги</a></li>
+                    <li class="li-item one"> <a class="nav-item" href="#service">Услуги</a></li>
                     <li class="li-item two"> <a class="nav-item" href="#">Главная</a></li>
                     <li class="li-item three"> <a class="nav-item" href="#works">Наши работы</a></li>
-                    <li class="li-item four"> <a class="nav-item" href="#">Контакты</a></li>
+                    <li class="li-item four"> <a class="nav-item" href="text.html">Контакты</a></li>
                     <li class="li-item five"> <a class="nav-item" href="#consultation">Обратная связь</a></li>
                 </div>
             </div>
@@ -334,7 +334,7 @@
         </div>
     </div>
     </div>
-
+    
     </main>
     <footer>
             <p>© 2023 Все права защищены</p>
@@ -400,6 +400,28 @@
             three.classList.remove('animate')
             four.classList.remove('animate')
             five.classList.remove('animate')
+        })
+        window.addEventListener('scroll', ()=> {
+            let scrollDistance = window.scrollY;
+            let service = document.querySelector('.services-title')
+            if ( scrollDistance >5) {
+                document.querySelector('.header-line').classList.add('shadow')
+            }
+            else {document.querySelector('.header-line').classList.remove('shadow') }
+            if (scrollDistance > document.querySelector('.header-screen-button').offsetTop) {
+                document.querySelector('.card-1').classList.add('anim2')
+                document.querySelector('.card-2').classList.add('anim2')
+                document.querySelector('.card-3').classList.add('anim2')
+                document.querySelector('.card-4').classList.add('anim2')
+                document.querySelector('.card-5').classList.add('anim2')
+            }
+            else {
+                document.querySelector('.card-1').classList.remove('anim2')
+                document.querySelector('.card-2').classList.remove('anim2')
+                document.querySelector('.card-3').classList.remove('anim2')
+                document.querySelector('.card-4').classList.remove('anim2')
+                document.querySelector('.card-5').classList.remove('anim2')
+            }
         })
     </script>
 </body>
